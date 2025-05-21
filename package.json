@@ -1,0 +1,28 @@
+{
+  "name": "reactnotes",
+  "version": "1.0.0",
+  "description": "Learning React indepth to understand",
+   "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ManasaNagireddy/reactnotes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ManasaNagireddy/reactnotes/issues"
+  },
+  "homepage": "https://github.com/ManasaNagireddy/reactnotes#readme",
+  "devDependencies": {
+    "parcel": "^2.15.1"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}
