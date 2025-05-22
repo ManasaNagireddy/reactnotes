@@ -86,3 +86,16 @@ Default export is used to export a single component from a file.
 Named export is used to export multiple components from a single file.
 Default export is used to export a single component from a file.
 
+React is Single Page Application (SPA) framework.
+React rendering client side routing
+Route required important elements are 
+   CreateBrowserRouter - CreateBrowserRouter([
+    {'path': '/', element: <App /> },
+    { 'path': '/about', element: <About /> },
+    { 'path': '/contact', element: <Contact /> },
+    { 'path': '/products', element: <Products /> },
+    { 'path': '/products/:id', element: <ProductDetails /> }
+   ]);
+   RouterProvider - root.render(<RouterProvider router={router} />)
+   Outlet - like slot in vue & Yield in laravel
+   Link - like a href will use
