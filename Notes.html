@@ -37,3 +37,36 @@ React js include in html file
 <script src="/App.js" type="module"></script>
 type="module" is used to import the file as a module. With out this browser will not understand the file.
 
+May 22 2025
+JSX is a syntax extension for JavaScript that looks similar to XML or HTML.
+JSX allows you to write HTML-like code inside JavaScript files.
+JSX is not required to use React, but it makes it easier to create and visualize the UI components.
+JSX is transpiled to JavaScript using Babel.
+Babel is a JavaScript compiler that converts modern JavaScript code into a version that can run in older browsers.
+JSX is camelcase for attributes and properties.
+JSX is not HTML, but it looks similar to HTML.
+JSX is not a string, but it looks like a string.
+
+Package.json will write script to run projects
+
+Components Composition - means calling one component inside another component.
+Components Composition is a way to build complex UIs by combining smaller, reusable components.
+EX:
+const Heading = () => <h1>Heading</h1>;
+const SubHeading = () => <h2>SubHeading</h2>;
+const App = () => {
+  return (
+    <div>
+      <Heading />
+      <SubHeading />
+    </div>
+  );
+};
+
+React elements will render directly to the DOM.
+Functional Components are reder useing <Heading />.
+Functional Components are stateless components that do not have their own state.
+Functional Components are pure functions that take props as an argument and return a React element.
+Functional Components are used to create presentational components that do not have any logic.
+Functional Components are used to create reusable components that can be used in multiple places.
+Functional Components are used to create components that do not need to manage their own state.

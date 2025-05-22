@@ -17,5 +17,8 @@ var parenthtml = React.createElement("div",{id:"section1",key:"1"},React.createE
 );
 var heading = React.createElement("h1",{"id":"heading1",key:"Namasate"},"Hello basic react example friend!!");
 console.log(parenthtml);
+//JSX Syntax - babel will convert this to React.createElement
+var jsonhtml = <h1 className="y" id="3" tabIndex="6">Hello Manasa. How JSX is working is great</h1>
+
 var root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(parenthtml);
+root.render(jsonhtml);
