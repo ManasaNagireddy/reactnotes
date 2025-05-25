@@ -99,3 +99,36 @@ Route required important elements are
    RouterProvider - root.render(<RouterProvider router={router} />)
    Outlet - like slot in vue & Yield in laravel
    Link - like a href will use
+
+   //Chunking , Lazy loading, Code splitting
+   //Dynamic loading
+   Lazy loading is a technique used to load components only when they are needed.
+   Lazy loading is used to improve performance by reducing the initial load time of the application.
+  Lazy load work routes with Supense only
+  Lazy(()=> import('./About'))
+  Lazy load work routes with Supense only
+  router = createBrowserRouter([
+    {
+      {path: '/',
+      element: <Supense fallback={<h2>Loading........</h2>}><About /></Supense>,}
+    }
+
+    npm install -D tailwindcss postcss autoprefixer
+    npx tailwindcss init -p
+
+    unit testing
+    integration testing
+    end to end testing
+
+    useContext is used to share data between components without passing props down the component tree.
+    useContext is used to create a global state that can be accessed by any component in the application.
+    useContext will data transfer from parent to child component.
+    Child to parent data transfer is not possible with useContext.
+    useContext is used to create a global state that can be accessed by any component in the application.
+     useContext and useState are used to create a global state that can be accessed by any component in the application.
+     <HomeProductsContext.Provider value={{ products, setProducts }}>
+        <HomeProducts />
+      </HomeProductsContext.Provider>
+      <CartContext.Provider value={{ cart, setCart }}>
+        <Cart />
+      </CartContext.Provider>

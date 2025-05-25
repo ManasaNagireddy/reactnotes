@@ -1,41 +1,37 @@
 // File: App.js
 // Description: This is a simple React application that renders a header, menu, and content area.
-
 import ReactDOM from "react-dom/client";
 import HeaderComponent from "./src/components/common/HeaderComponent";
-
-import SearchComponent from "./src/components/SearchComponent";
-
 import FooterComponent from "./src/components/common/FooterComponent";
 import { LOGO_URL } from "./src/components/utils/Contains";	
-import React, { useEffect,useState } from "react";
-
-
-import mockData from "./src/components/utils/MockData";
-import FooListComponent from "./src/components/FoodListComponent";
-import MenuComponent from "./src/components/MenuComponent";
 import ErrorComponent from "./src/components/ErrorComponent";
 import { createBrowserRouter,RouterProvider,Outlet  } from "react-router-dom";
 import AboutusComponent from "./src/components/AboutusComponent";
 import ContactusComponent from "./src/components/ContactusComponent";
 import HomeComponent from "./src/components/HomeComponent";
+import { Layout } from 'antd';
+import { Header, Footer, Sider, Content } from 'antd/lib/layout/layout';
 
-//HederComponent
-//BodyComponent
+
+
 const AppLayout = () => {
+	
 	return (
-		<div>
-			
-			<div className="header">
-				<HeaderComponent logo={LOGO_URL} />
-				<MenuComponent />
-			</div>
-			<div className="content">
-				<Outlet/>
-			</div>
-			
-			<FooterComponent/>
-		</div>
+		<>
+		<Layout>
+			<Header>
+				<HeaderComponent logo={LOGO_URL}/>
+			</Header>
+			<Layout>
+				<Content>
+					<Outlet/>
+				</Content>
+			</Layout>
+			<Footer>
+				<FooterComponent/>
+			</Footer>
+		</Layout>
+		</>
 	);
 }
 

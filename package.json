@@ -5,7 +5,8 @@
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html",
-    "test": "jest"
+    "test": "jest",
+    "build:css": "tailwindcss -i ./src/index.css -o ./dist/output.css --watch"
   },
   "repository": {
     "type": "git",
@@ -18,9 +19,16 @@
   },
   "homepage": "https://github.com/ManasaNagireddy/reactnotes#readme",
   "devDependencies": {
-    "parcel": "^2.15.1"
+    "autoprefixer": "^10.4.21",
+    "parcel": "^2.15.1",
+    "tailwindcss": "^4.1.7"
   },
   "dependencies": {
+    "20": "^3.1.9",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/material": "^7.1.0",
+    "antd": "^5.25.2",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^6.30.1"
