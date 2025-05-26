@@ -1,8 +1,10 @@
 import { Row, Col, Card,Layout } from 'antd';
-import MenuComponent from '../MenuComponent';
+import MenuComponent from './MenuComponent';
 const { Header } = Layout;
 
+
 const HeaderComponent = ({logo}) => {
+	
 	return (
 		<>
 			 <Header className="app-header">
