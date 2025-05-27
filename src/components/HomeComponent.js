@@ -6,18 +6,16 @@ import HomeProductsContext from "./contexts/HomeProductsContext";
 import React, { useEffect, useState } from "react";
 import SliderComponent from "./common/SliderComponent";
 
+
 const HomeComponent = () => {
     const [products, setProducts] = useState([]);
     const [allProducts, setAllProducts] = useState([]);
 
     useEffect(() => {
-        console.log("Fetching product list...");
         const fetchProducts = async () => {
             try {
                 const response = await fetch(`https://dummyjson.com/products`);
                 const data = await response.json();
-                console.log(data);
-                // `data.products` because the API returns { products: [...] }
                 setProducts(data.products);
                 setAllProducts(data.products);
             } catch (error) {

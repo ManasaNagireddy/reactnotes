@@ -3,7 +3,6 @@ import slider1 from '/src/assets/sliders/slider1.png';
 
 
 const SliderComponent = () => {
-    console.log(slider1);
     return (
         <Carousel autoplay infinite={true} dots={true} >
             <div>

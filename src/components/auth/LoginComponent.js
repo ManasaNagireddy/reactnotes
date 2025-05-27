@@ -4,11 +4,9 @@ import { PlusOutlined, MinusOutlined } from '@ant-design/icons';
 const LoginComponent = () => {
   const handleLogin = (event) => {
     event.preventDefault();
-    // Logic for handling login
-    console.log("Login form submitted");
+
   };
 const setCount = (counter,action) => {
-  console.log(action.type);
   switch(action.type){
     case 'add' :
       return {...counter,count :  counter.count+1};
