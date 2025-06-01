@@ -133,10 +133,15 @@ Route required important elements are
         <Cart />
       </CartContext.Provider>
 
+      images load to parcel 
+      npx parcel build index.html --public-url ./
+
+      
       React Testing Library is used to test React components.
       React Testing Library is used to test React components in a way that simulates user interactions.
       Unit Testing
       Integration Testing
+
       End to End Testing
 
       React Testing Library on top of Jest
@@ -149,3 +154,12 @@ Route required important elements are
       5. npm run test 
       6. jest config file createdjest.config.js
     npx jest --init
+    npm install --save-dev babel-jest @babel/preset-env @babel/preset-react @babel/core
+
+ 
+    Querying
+    const inputboxes = screen.getByRole("textbox");
+    console.log(inputboxes.length);
+    <b> npm run test - to run test cases</b>
+    it , test both will do the same.
+    Describe in jest to make test cases group

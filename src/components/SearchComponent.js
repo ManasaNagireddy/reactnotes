@@ -37,7 +37,7 @@ const SearchComponent = () => {
 		}}>Sort By Name</Button>	
 
 		<Button  variant="solid" color="warning" onClick={() => {
-			const filteredProducts = products.filter((product) => product.reviewCount > 60);
+			const filteredProducts = products.filter((product) => product.reviewCount > 4);
 			setProducts(filteredProducts);
 		}}>
 			Filter By Review Count 60
