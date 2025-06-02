@@ -8,7 +8,6 @@ const cartSlice = createSlice({
   reducers: {
     addToCart(state, action) {
       const newItem = action.payload;
-      console.log("Current state:", current(state.cartItems)); // Log the current state for debugging
       const existingItem = state.cartItems.find(item => item.id === newItem.id);
 
       if (existingItem) {

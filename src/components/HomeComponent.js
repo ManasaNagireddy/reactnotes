@@ -5,6 +5,7 @@ import FoodListComponent from "./FoodListComponent";
 import HomeProductsContext from "./contexts/HomeProductsContext";
 import React, { useEffect, useState } from "react";
 import SliderComponent from "./common/SliderComponent";
+import { useSelector } from 'react-redux';
 
 
 const HomeComponent = () => {
@@ -25,7 +26,12 @@ const HomeComponent = () => {
 
         fetchProducts();
     }, []);
+    const cart = useSelector((store) => store.cart);
 
+
+    const handletoaddcart = () => {
+        console.log(this);
+    }
     return (
         <div>
             <SliderComponent />
